@@ -1,0 +1,14 @@
+subprojects {
+    group 'com.base.chapter4'
+    apply plugin: 'java'
+
+    /*Task that copies all the dependencies under build/libs */
+    task copyDependencies(type: Copy) {
+        from configurations.implementation
+        into 'build/libs'
+    }
+
+    dependencies {
+        implementation spring.context
+    }
+}
