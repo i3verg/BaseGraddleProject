@@ -1,6 +1,6 @@
 rootProject.name = 'SpringFiveExt'
 
-include 'Chapter4:Tier1', 'Chapter4:AnnotationConfigInitialization'
+include 'Chapter4:Tier1', 'Chapter4:AnnotationConfigInitialization', "Chapter4:Destroying"
 
 rootProject.children.each {
     project ->

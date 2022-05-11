@@ -44,6 +44,7 @@ public class SingerConfig {
         Signer.getBean("singerOne", context);
         Signer.getBean("singerTwo", context);
         Signer.getBean("singerThree", context);
+        context.close();
     }
 
 }
