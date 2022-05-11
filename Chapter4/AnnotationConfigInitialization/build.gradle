@@ -1,0 +1,4 @@
+dependencies {
+    implementation project(':Chapter4:Tier1')
+    runtimeClasspath spring.context
+}
