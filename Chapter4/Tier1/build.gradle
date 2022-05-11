@@ -1,5 +1,9 @@
-plugins {
+/*plugins {
     id 'java'
+}
+
+dependencies {
+    implementation spring.context
 }
 
 jar {
@@ -8,12 +12,12 @@ jar {
                 "Implementation-Title": "Gradle",
                 "Implementation-Version": "1.1",
                 //"Main-class": "com.base.ch3.xml.DeclareSpringComponents",
-                "Classpath": configurations.runtimeClasspath.collect { it.getName() }.join(' ')
+                //"Classpath": configurations.runtimeClasspath.collect { it.getName() }.join(' ')
 
         )
     }
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     from {
         configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
-    }
-}
+    }*/
+//}

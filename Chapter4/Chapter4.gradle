@@ -1,5 +1,5 @@
 subprojects {
-    group 'com.base.chapter4'
+    group 'com.base.ch4'
     apply plugin: 'java'
 
     /*Task that copies all the dependencies under build/libs */
@@ -10,5 +10,6 @@ subprojects {
 
     dependencies {
         implementation spring.context
+        implementation javax.annotation
     }
 }
