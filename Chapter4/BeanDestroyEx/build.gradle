@@ -1,0 +1,4 @@
+dependencies {
+    implementation project(':Chapter4:Destroying')
+    runtimeClasspath spring.context
+}

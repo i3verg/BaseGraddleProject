@@ -1,3 +1,5 @@
+package com.base.ch4.destroy;
+
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
@@ -13,7 +15,7 @@ public class DestructiveBean implements InitializingBean {
         System.out.println("Initialization section Initialing BEAN");
 
         if (filePath == null) {
-            throw new IllegalArgumentException("You must set path for file. This is property of DestructiveBean.class");
+            throw new IllegalArgumentException("You must set path for file.\n This is property of DestructiveBean.class");
         }
 
         this.file = new File(filePath);
@@ -28,7 +30,7 @@ public class DestructiveBean implements InitializingBean {
             System.err.println("Error: failed to delete file");
         }
 
-        System.out.println("File was deleted :? " + file.exists());
+        System.out.println("File was deleted :? " + !file.exists());
     }
 
     public void setFilePath(String filePath) {
