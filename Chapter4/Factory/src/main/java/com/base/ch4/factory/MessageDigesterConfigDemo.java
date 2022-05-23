@@ -15,12 +15,10 @@ public class MessageDigesterConfigDemo {
             messageDigestFactoryBean.setDefaultAlgo("SHA1");
             return messageDigestFactoryBean;
         }
-
         @Bean
         MessageDigestFactoryBean defaultDigest() {
             return new MessageDigestFactoryBean();
         }
-
         @Bean
         MessageDigester digester() throws Exception {
             MessageDigester messageDigester = new MessageDigester();
